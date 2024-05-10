@@ -55,6 +55,11 @@ if (!isValidNumber(object.timeSeconds.value) || object.timeSeconds.value < 0) {
   throw new Error("Time value must be a positive number.");
 }
 
+// Check distance
+if (!isValidNumber(object.distance.value) || object.distance.value < 0) {
+  throw new Error("Initial distance must be a non-negative number.");
+}
+
 
 
 

@@ -76,6 +76,10 @@ const newDistance = object.distance.value + (object.velocity.value * oblect.time
 //Calculating remaining fuel
 const remainingFuel = object.fuel.value - (object.fuelBurnRate.value * object.timeSeconds.value);
 
+// A function named calcNewVel that takes an object props as its argument.
+function calcNewVel(props) {
+  // Check if props is provided, throw an error if not
+ if (!props) throw new Error("props is required");
 
 
 

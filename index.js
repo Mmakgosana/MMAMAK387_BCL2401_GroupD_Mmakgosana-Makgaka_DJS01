@@ -40,6 +40,11 @@ function isValidNumber(value) {
   return typeof value === "number" && isFinite(value);
 }
 
+// Check Velocity
+if (!isValidNumber(object.velocity.value) || object.velocity.value <= 0) {
+  throw new Error("Initial velocity must be a positive number.");
+}
+
 
 
 

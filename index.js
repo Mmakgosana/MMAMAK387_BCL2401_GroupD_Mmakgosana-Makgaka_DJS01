@@ -60,6 +60,21 @@ if (!isValidNumber(object.distance.value) || object.distance.value < 0) {
   throw new Error("Initial distance must be a non-negative number.");
 }
 
+// Check fuel
+if (!isValidNumber(object.fuel.value) || object.fuel.value < 0) {
+  throw new Error("Initial fuel value must be a positive number.");
+}
+
+// Check fuelBurnRate
+if (!isValidNumber(object.fuelBurnRate.value) || object.fuelBurnRate.value < 0) {
+  throw new Error("Fuel burn rate must be a positive number.");
+}
+
+//Calculating new distance
+const newDistance = object.distance.value + (object.velocity.value * oblect.timeSeconds.value);
+
+
+
 
 
 

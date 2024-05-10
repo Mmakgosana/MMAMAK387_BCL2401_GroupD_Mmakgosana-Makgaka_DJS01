@@ -81,6 +81,15 @@ function calcNewVel(props) {
   // Check if props is provided, throw an error if not
  if (!props) throw new Error("props is required");
 
+ 
+ // Destructuring the required properties from props
+ const {velocity, acceleration, timeSeconds, distance, fuel, fuelBurnRate,} = props;
+
+ // this code block checks if all the required properties (velocity, acceleration, timeSeconds, distance, fuel, and fuelBurnRate) are provided, if noe it will throw an error
+   if (!velocity || !acceleration || !timeSeconds || !distance || !fuel || !fuelBurnRate) {
+     throw new Error("All properties are required");
+   }
+
 
 
 

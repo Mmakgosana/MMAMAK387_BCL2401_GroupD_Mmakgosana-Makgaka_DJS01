@@ -109,6 +109,11 @@ function calcNewVel(props) {
 // declaring a variable newVelocity and assigning it the value returned by velocityKm
 let newVelocity = object.velocityKm;
 
+// Consoling the output for the corrected new velocity, distance and remaining fuel
+console.log(`Corrected New Velocity: ${newVelocity} km/h`);
+console.log(`Corrected New Distance: ${newDistance} km`);
+console.log(`Corrected Remaining Fuel: ${remainingFuel} kg`);
+
 
 
 

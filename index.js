@@ -73,6 +73,8 @@ if (!isValidNumber(object.fuelBurnRate.value) || object.fuelBurnRate.value < 0) 
 //Calculating new distance
 const newDistance = object.distance.value + (object.velocity.value * oblect.timeSeconds.value);
 
+//Calculating remaining fuel
+const remainingFuel = object.fuel.value - (object.fuelBurnRate.value * object.timeSeconds.value);
 
 
 

@@ -35,6 +35,11 @@ const object = calcNewVel({
   },
 });
 
+//Helper function to check if a value is a valid number
+function isValidNumber(value) {
+  return typeof value === "number" && isFinite(value);
+}
+
 
 
 

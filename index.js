@@ -50,6 +50,12 @@ if (!isValidNumber(object.acceleration.value) || object.acceleration.value <= 0)
   throw new Error("Acceleration must be a positive number.");
 }
 
+// Check timeSeconds
+if (!isValidNumber(object.timeSeconds.value) || object.timeSeconds.value < 0) {
+  throw new Error("Time value must be a positive number.");
+}
+
+
 
 
 
